@@ -62,8 +62,8 @@ The plugin includes a test suite. To run the tests:
 
 This plugin uses:
 
-- wp-jquery-ui-sortable - jQuery UI Sortable for WordPress to sort the order of elements in global settings
-- SVG icons - Lucide Icons
+- wp-jquery-ui-sortable - jQuery UI Sortable for WordPress to sort the order of elements in global settings - http://jqueryui.com/demos/sortable
+- Lucide Icons - https://lucide.dev/icons/
 
 ## License
 
