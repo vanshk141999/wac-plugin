@@ -1,0 +1,60 @@
+.wac-sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 500px;
+}
+
+.wac-sortable li {
+	margin: 5px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	cursor: move;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+}
+
+.wac-sortable li:hover {
+	background-color: #f9f9f9;
+	border-color: #999;
+}
+
+.wac-sortable .dashicons {
+	margin-right: 10px;
+	color: #666;
+}
+
+.wac-sortable li.ui-sortable-helper {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.wac-sortable li.ui-sortable-placeholder {
+	border: 2px dashed #ccc;
+	background-color: #f9f9f9;
+	visibility: visible !important;
+}
+
+.wac-meta-box-ctn {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+
+	input {
+	font-size: 12px;
+	}
+}
+
+.wac-meta-box-label {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.wac-meta-box-input {
+	max-width: 500px;
+	width: 100%;
+	margin-top: 16px;
+}
