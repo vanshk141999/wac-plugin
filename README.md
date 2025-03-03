@@ -1,72 +1,80 @@
-# WordPress Contributors Plugin
+# WP Additional Contributors
 
-A WordPress plugin that allows multiple authors to be displayed for a post.
+Enhance your WordPress posts with multiple contributors! This plugin allows you to assign and display multiple contributors to a single post, perfect for collaborative content where multiple authors have contributed to an article.
 
-## Description
+## Features
 
-The WordPress Contributors Plugin enhances your WordPress site by allowing you to assign multiple contributors to a single post. This is perfect for collaborative content where multiple authors have contributed to an article.
+- Add multiple contributors to any post
+- Customizable contributor display box
+- Show/hide contributor avatars
+- Display contributor bios and website links
+- Configurable display order of contributor information
+- Author archive pages include posts where they're listed as contributors
+- Fully responsive design
+- Clean and modern UI
 
-### Features
+## Requirements
 
-- Add a metabox to the post editor for selecting multiple contributors
-- Display contributors with their avatars at the end of each post
-- Responsive design that works on all devices
-- Clean, modern UI that integrates with WordPress core styles
-- Links to each contributor's author page
+- WordPress 6.7 or higher
+- PHP 7.4 or higher
 
 ## Installation
 
 1. Upload the `wp-additional-contributors` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Edit a post and use the Contributors metabox to select multiple contributors
+3. Configure the display options in the WordPress admin settings
 
 ## Usage
 
-### Admin Side
+### Adding Contributors
 
-1. When editing a post, you'll see a new metabox labeled "Contributors" in the sidebar
-2. Check the boxes next to the authors you want to credit as contributors
-3. Save or publish the post
+1. Edit any post
+2. Look for the "Contributors" meta box in the post editor
+3. Select the users you want to add as contributors
+4. Customize the contributor box title if desired
+5. Update/publish your post
 
-### Front End
+### Display Options
 
-The plugin automatically displays a "Contributors" section at the end of your post content showing:
+You can customize how contributors are displayed:
 
-- Contributor avatars
-- Contributor names
-- Contributor roles
-- Links to contributor author pages
-
-## Requirements
-
-- WordPress 5.0 or higher
-- PHP 7.0 or higher
+- Show/hide avatars
+- Show/hide contributor names
+- Show/hide biographical info
+- Show/hide website links
+- Arrange the display order of elements
 
 ## Development
 
 ### Coding Standards
 
-This plugin follows the [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/).
+This plugin follows the [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/). To contribute, please ensure your code adheres to these standards.
 
-### Unit Testing
+### Testing
 
-To run the unit tests:
+The plugin includes a test suite. To run the tests:
 
 1. Install PHPUnit
-2. Run `phpunit` from the plugin directory
-
-## License
-
-GPL v2 or later
+2. Run `sh bin/install-wp-tests.sh wp-test root '' localhost 6.7` to set up the testing environment
+3. Run `vendor/bin/phpunit` to execute the tests
 
 ## Credits
 
-This plugin uses the following libraries:
+This plugin uses:
 
-- WordPress Core CSS/JS for UI elements
+- wp-jquery-ui-sortable - jQuery UI Sortable for WordPress to sort the order of elements in global settings
+- SVG icons- Lucide Icons
+
+## License
+
+GPL v3.0 or later
 
 ## Changelog
 
-### 1.0
+### 1.0.0
 
 - Initial release
+- Add multiple contributors to posts
+- Customizable contributor display
+- Author archive integration
+- Responsive design implementation
