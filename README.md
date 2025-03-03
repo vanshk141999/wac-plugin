@@ -2,6 +2,9 @@
 
 Enhance your WordPress posts with multiple contributors! This plugin allows you to assign and display multiple contributors to a single post, perfect for collaborative content where multiple authors have contributed to an article.
 
+## Demo - https://www.loom.com/share/3e749cdbd09243e0b158d6635a7ccb30?sid=804f4d7c-232a-4d2c-a165-d05e5f9c0085
+## Download Plugin - https://github.com/vanshk141999/wac-plugin/releases/tag/v1.0.0
+
 ## Features
 
 - Add multiple contributors to any post
