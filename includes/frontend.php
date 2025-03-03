@@ -89,7 +89,7 @@ class Frontend {
 
 				$elements = array(
 					'name'    => function () use ( $user ) {
-						return '<h2 aria-label="' . __( 'view contributor profile', 'wac' ) . '" aria-describedby="wac-contributor-view-profile" class="wac-contributor-name"><a href="' . esc_url( get_author_posts_url( $user->ID ) ) . '">' .
+						return '<h2 aria-label="' . __( 'View Profile', 'wac' ) . '" aria-describedby="wac-contributor-view-profile" class="wac-contributor-name"><a href="' . esc_url( get_author_posts_url( $user->ID ) ) . '">' .
 								esc_html( $user->display_name ) . '</a></h2>';
 					},
 					'bio'     => function () use ( $user ) {
