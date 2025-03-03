@@ -262,6 +262,12 @@ class Admin {
 	 * @return void
 	 */
 	public function add_contributors_metabox() {
+
+		// if current user is other than admin, editor or author, return.
+		if ( ! current_user_can( 'publish_posts' ) ) {
+			return;
+		}
+
 		add_meta_box(
 			'wp_contributors_metabox',
 			'Contributors',
