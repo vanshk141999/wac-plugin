@@ -20,9 +20,9 @@ Enhance your WordPress posts with multiple contributors! This plugin allows you 
 
 ## Installation
 
-1. Upload the `wp-additional-contributors` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure the display options in the WordPress admin settings
+1. Clone the repository
+2. `composer i` to install the php packages
+3. `vendor/bin/phpcs -ps . --standard=phpcs.xml` to run phpcs
 
 ## Usage
 
