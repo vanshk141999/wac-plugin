@@ -89,7 +89,7 @@ class Frontend {
 
 				$elements = array(
 					'name'    => function () use ( $user ) {
-						return '<h2 class="wac-contributor-name"><a href="' . esc_url( get_author_posts_url( $user->ID ) ) . '">' .
+						return '<h2 aria-label="' . __( 'view contributor profile', 'wac' ) . '" aria-describedby="wac-contributor-view-profile" class="wac-contributor-name"><a href="' . esc_url( get_author_posts_url( $user->ID ) ) . '">' .
 								esc_html( $user->display_name ) . '</a></h2>';
 					},
 					'bio'     => function () use ( $user ) {
@@ -102,7 +102,7 @@ class Frontend {
 					},
 				);
 
-				$output .= '<div class="wac-contributor-card">';
+				$output .= '<div class="wac-contributor-card" tabindex="0" aria-label="' . esc_html( $user->display_name ) . '" aria-describedby="wac-contributor-info">';
 				if ( ! empty( $options['show_avatar'] ) ) {
 					$output .= '<div class="wac-contributor-avatar">' . $avatar . '</div>';
 				}
