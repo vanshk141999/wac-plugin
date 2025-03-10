@@ -39,7 +39,7 @@
 	-->
 
 	<!-- Include the WordPress-Extra standard. -->
-	<!-- <rule ref="WordPress-Extra">
+	<rule ref="WordPress-Extra">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
@@ -77,7 +77,7 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
-	</rule> -->
+	</rule>
 
 	<!-- Let's also check that everything is properly documented. -->
 	<rule ref="WordPress-Docs"/>
